@@ -6,7 +6,7 @@ t_start = time.perf_counter()
 with open('input.txt') as f:
     n = int(f.readline())
     if n < 0 or n > 10**7:
-        print("Неправильный формат данных")
+        print("Неправильный формат данных. Введите число еще раз")
 
     el1 = 0
     el2 = 1

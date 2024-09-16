@@ -2,7 +2,9 @@ import time
 import sys
 
 def summ(a, b):
-    return a + b
+    if (-1_000_000_000 <= a and a <= 1_000_000_000) and (-1_000_000_000 <= b and b <= 1_000_000_000):
+        return a + b
+    return "Введите числа еще раз"
 
 a, b = map(int, input().split())
 start = time.perf_counter()
