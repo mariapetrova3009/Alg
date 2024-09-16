@@ -17,6 +17,6 @@ with open('input.txt') as f:
 with open('output.txt', 'w') as f:
     f.write(str(el2))
 stop = time.perf_counter()
-print("time: %s ms" % (time.perf_counter() - t_start))
+print("time: %s ms" % (stop - t_start))
 memory_usage = sys.getsizeof(n) + sys.getsizeof(el1) + sys.getsizeof(el2)
 print(f"memory usage: {memory_usage} bytes")

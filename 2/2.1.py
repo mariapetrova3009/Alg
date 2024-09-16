@@ -1,7 +1,6 @@
 import time
 import sys
 
-t_start = time.perf_counter()
 start = time.perf_counter()
 
 with open('input.txt') as f:
@@ -20,7 +19,6 @@ with open('output.txt', 'w') as f:
     f.write(str(el2))
 
 stop = time.perf_counter()
-duration_microseconds = (stop - start) * 1_000_000
-print("time: %s ms" % (time.perf_counter() - t_start))
+print("time: %s ms" % (stop - start))
 memory_usage = sys.getsizeof(n) + sys.getsizeof(el1) + sys.getsizeof(el2)
 print(f"memory usage: {memory_usage} bytes")
