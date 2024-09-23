@@ -12,9 +12,7 @@ with open('input.txt') as f:
     else:
 
         for i in range(2, n + 1):
-            c = el2
-            el2 = (el1 + el2) % 10
-            el1 = c
+            el1, el2 = el2, (el1 + el2) % 10
 with open('output.txt', 'w') as f:
     f.write(str(el2))
 stop = time.perf_counter()
