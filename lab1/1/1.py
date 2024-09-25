@@ -1,3 +1,6 @@
+import time
+start = time.perf_counter()
+
 with open('input.txt') as f:
     ind_list = []
     n = int(f.readline())
@@ -15,3 +18,6 @@ with open('input.txt') as f:
 
 with open('output.txt', 'w') as f:
     f.write(' '.join(map(str, array)))
+
+stop = time.perf_counter()
+print("time: %s ms" % (stop - start))
