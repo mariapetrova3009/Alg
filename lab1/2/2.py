@@ -1,5 +1,5 @@
 with open('input.txt') as f:
-    ind_list = []
+    ind_list = [1]
     n = int(f.readline())
     array = list(map(int, f.readline().split()))
     for i in range(1, n):
@@ -10,8 +10,10 @@ with open('input.txt') as f:
             array[j] = array[j - 1]
             j -= 1
 
+        ind_list.append(j + 1)
         array[j] = x
 
 
 with open('output.txt', 'w') as f:
+    f.write(' '.join(map(str, ind_list)) + "\n")
     f.write(' '.join(map(str, array)))
