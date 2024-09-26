@@ -11,12 +11,12 @@ def selection_sort(n, array):
 
 
 start = time.perf_counter()
-with open('input.txt') as f:
+with open('../tests/input.txt') as f:
     n = int(f.readline())
     array = list(map(int, f.readline().split()))
     result = selection_sort(n, array)
 
-with open('output.txt', 'w') as f:
+with open('../tests/output.txt', 'w') as f:
     f.write(' '.join(map(str, result)))
 
 stop = time.perf_counter()

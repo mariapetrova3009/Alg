@@ -1,6 +1,6 @@
 import time
 start = time.perf_counter()
-with open('input.txt') as f:
+with open('../tests/input.txt') as f:
     n = int(f.readline())
     s = f.readline()
     sl = {}
@@ -21,7 +21,7 @@ with open('input.txt') as f:
                 letter = k
     answer = answer[:len(answer) // 2] + letter + answer[len(answer)//2:]
 
-with open('output.txt', 'w') as f:
+with open('../tests/output.txt', 'w') as f:
     f.write(answer)
 
 stop = time.perf_counter()

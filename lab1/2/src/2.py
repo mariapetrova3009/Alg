@@ -1,6 +1,6 @@
 import time
 start = time.perf_counter()
-with open('input.txt') as f:
+with open('../tests/input.txt') as f:
     ind_list = [1]
     n = int(f.readline())
     array = list(map(int, f.readline().split()))
@@ -16,7 +16,7 @@ with open('input.txt') as f:
         array[j] = x
 
 
-with open('output.txt', 'w') as f:
+with open('../tests/output.txt', 'w') as f:
     f.write(' '.join(map(str, ind_list)) + "\n")
     f.write(' '.join(map(str, array)))
 

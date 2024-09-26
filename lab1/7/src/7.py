@@ -1,7 +1,7 @@
 import time
 start = time.perf_counter()
 
-with open('input.txt') as f:
+with open('../tests/input.txt') as f:
     ind_list = []
     n = int(f.readline())
     data = f.readline().split()
@@ -22,7 +22,7 @@ with open('input.txt') as f:
 
 
 
-with open('output.txt', 'w') as f:
+with open('../tests/output.txt', 'w') as f:
     f.write(str(array[0][0]) + " " + str(array[lenn//2][0]) + " " +  str(array[-1][0]))
 
 stop = time.perf_counter()
