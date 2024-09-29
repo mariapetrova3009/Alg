@@ -9,7 +9,6 @@ def selection_sort(n, array):
         array[i], array[min_ind] = array[min_ind], array[i]
     return array
 
-
 start = time.perf_counter()
 with open('../tests/input.txt') as f:
     n = int(f.readline())

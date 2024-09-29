@@ -2,7 +2,6 @@ import time
 start = time.perf_counter()
 
 with open('../tests/input.txt') as f:
-    ind_list = []
     n = int(f.readline())
     array = list(map(int, f.readline().split()))
     for i in range(1, n):
